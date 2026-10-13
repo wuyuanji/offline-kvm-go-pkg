@@ -2,6 +2,27 @@
 
 在联网机器上制作 Debian 11 (bullseye) 的 KVM/libvirt 虚拟化栈及 Go 开发环境的离线安装包，并在目标机器上纯离线安装验证。
 
+## 下载
+
+直接使用已制作好的离线包（约 334 MB）：
+
+```bash
+# 方式一：浏览器/curl 下载
+https://github.com/wuyuanji/offline-kvm-go-pkg/releases/download/v1.0.0/debian_offline-kvm-go-pkgs.tar.gz
+
+# 方式二：命令行下载
+curl -L -o debian_offline-kvm-go-pkgs.tar.gz \
+  https://github.com/wuyuanji/offline-kvm-go-pkg/releases/download/v1.0.0/debian_offline-kvm-go-pkgs.tar.gz
+```
+
+文件校验：
+
+- SHA256: `d45b745ed9721ebbcd08c6e7260e52bbf637a1d8a0d1a5aaf2cd70cad7b05d7f`
+- MD5: `0a4f8a69f73976f9555abd2bf3aafb9f`
+- 大小: 350,425,933 字节（334.2 MB）
+
+> 仓库代码在 `main` 分支；离线包以 GitHub Release 附件形式发布。
+
 ## 背景
 
 - **制作端**：`10.12.5.216`（Debian 11, x86_64，可联网，使用阿里云镜像源）
